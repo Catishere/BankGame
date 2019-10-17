@@ -1,4 +1,6 @@
-package entity;
+package model;
+
+import model.User;
 
 public interface BankAccountInterface {
     double getBalance();

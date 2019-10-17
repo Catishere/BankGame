@@ -1,4 +1,6 @@
-package entity;
+package model;
+
+import banking.Bank;
 
 import java.util.Date;
 

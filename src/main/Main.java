@@ -1,7 +1,7 @@
 package main;
 
-import entity.Bank;
-import entity.User;
+import banking.Bank;
+import model.User;
 
 public class Main {
 

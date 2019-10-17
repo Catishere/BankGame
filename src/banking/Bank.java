@@ -1,4 +1,7 @@
-package entity;
+package banking;
+
+import model.BankAccountInterface;
+import model.User;
 
 import java.util.ArrayList;
 import java.util.Date;
