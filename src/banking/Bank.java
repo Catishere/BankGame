@@ -73,7 +73,7 @@ public class Bank {
             return user;
         }
 
-        void setUser(User user) {
+        private void setUser(User user) {
             this.user = user;
         }
 
