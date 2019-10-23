@@ -2,6 +2,7 @@ package banking;
 
 import model.BankAccountInterface;
 import model.User;
+import security.ReflectionSecurityManager;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,6 +18,11 @@ public class Bank {
     }
 
     private Bank() {
+        try {
+            System.setSecurityManager(new ReflectionSecurityManager());
+        } catch (SecurityException se) {
+            System.out.println("Double call.");
+        }
     }
 
     private boolean hasAccount(BankAccount bankAccount)
@@ -67,7 +73,7 @@ public class Bank {
             return user;
         }
 
-        public void setUser(User user) {
+        void setUser(User user) {
             this.user = user;
         }
 
