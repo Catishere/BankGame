@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Bank {
+public final class Bank {
 
     private List<BankAccount> accounts = new ArrayList<>();
     private static Bank ourInstance = new Bank();

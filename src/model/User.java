@@ -4,7 +4,7 @@ import banking.Bank;
 
 import java.util.Date;
 
-public class User {
+public final class User {
     private String username;
     private String password;
     private Date created_at;
