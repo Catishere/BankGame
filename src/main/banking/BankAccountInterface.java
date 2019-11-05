@@ -1,6 +1,6 @@
-package model;
+package main.banking;
 
-import model.User;
+import main.model.User;
 
 public interface BankAccountInterface {
     double getBalance();

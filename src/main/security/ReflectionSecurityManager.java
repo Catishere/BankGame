@@ -1,4 +1,4 @@
-package security;
+package main.security;
 
 public class ReflectionSecurityManager extends SecurityManager {
 

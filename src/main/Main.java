@@ -1,7 +1,7 @@
 package main;
 
-import banking.Bank;
-import model.User;
+import main.banking.Bank;
+import main.model.User;
 
 public class Main {
 

@@ -1,8 +1,10 @@
-package banking;
+package main.banking;
 
-import model.BankAccountInterface;
-import model.User;
-import security.ReflectionSecurityManager;
+import main.BankAccountInterface;
+import main.ReflectionSecurityManager;
+import main.User;
+import main.model.User;
+import main.security.ReflectionSecurityManager;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -83,4 +85,6 @@ public final class Bank {
         }
 
     }
+
+
 }

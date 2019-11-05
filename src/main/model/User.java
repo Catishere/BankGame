@@ -1,6 +1,7 @@
-package model;
+package main.model;
 
-import banking.Bank;
+import main.banking.Bank;
+import main.banking.BankAccountInterface;
 
 import java.util.Date;
 
