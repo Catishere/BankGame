@@ -31,8 +31,8 @@ public final class Bank {
 
     public boolean requestTransfer(User user1, User user2, double amount)
     {
-        BankAccount ba1 = (BankAccount) user1.getBankAccount();
-        BankAccount ba2 = (BankAccount) user2.getBankAccount();
+        BankAccountImpl ba1 = (BankAccountImpl) user1.getBankAccount();
+        BankAccountImpl ba2 = (BankAccountImpl) user2.getBankAccount();
         if (!(hasAccount(ba1) && hasAccount(ba2)))
             return false;
 
@@ -47,18 +47,18 @@ public final class Bank {
 
     public User openAccount(String name, String password, double startBalance)
     {
-        BankAccount bankAccount = new BankAccount(startBalance);
+        BankAccountImpl bankAccount = new BankAccountImpl(startBalance);
         User user = new User(name, password, new Date(), bankAccount);
         bankAccount.setUser(user);
         accounts.add(bankAccount);
         return user;
     }
 
-    private class BankAccount implements BankAccountInterface {
+    private class BankAccountImpl implements main.banking.BankAccount {
         private double balance;
         private User user;
 
-        private BankAccount(double balance) {
+        private BankAccountImpl(double balance) {
             this.balance = balance;
         }
 

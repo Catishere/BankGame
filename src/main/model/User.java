@@ -1,7 +1,7 @@
 package main.model;
 
 import main.banking.Bank;
-import main.banking.BankAccountInterface;
+import main.banking.BankAccount;
 
 import java.util.Date;
 
@@ -9,9 +9,9 @@ public final class User {
     private String username;
     private String password;
     private Date created_at;
-    private BankAccountInterface bankAccount;
+    private BankAccount bankAccount;
 
-    public User(String username, String password, Date created_at, BankAccountInterface bankAccount) {
+    public User(String username, String password, Date created_at, BankAccount bankAccount) {
         this.username = username;
         this.password = password;
         this.created_at = created_at;
@@ -28,7 +28,7 @@ public final class User {
         return password.equals("hardcode");
     }
 
-    public BankAccountInterface getBankAccount() {
+    public BankAccount getBankAccount() {
         return bankAccount;
     }
 

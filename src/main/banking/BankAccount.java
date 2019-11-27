@@ -2,7 +2,7 @@ package main.banking;
 
 import main.model.User;
 
-public interface BankAccountInterface {
+public interface BankAccount {
     double getBalance();
     User getUser();
 }
